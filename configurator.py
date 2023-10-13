@@ -28,7 +28,7 @@ for arg in sys.argv[1:]:
         exec(open(config_file).read())
     else:
         # assume it's a --key=value argument
-        assert arg.startswith('--')
+        assert arg.startswith('--'), "wrong format, extra argument must be --key=value"
         key, val = arg.split('=')
         key = key[2:]
         if key in globals():

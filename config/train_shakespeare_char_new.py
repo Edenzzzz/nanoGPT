@@ -14,6 +14,7 @@ wandb_project = 'shakespeare-char'
 wandb_run_name = 'mini-gpt'
 
 dataset = 'shakespeare_char'
+data_percent = 1.0
 gradient_accumulation_steps = 1
 batch_size = 64
 block_size = 300 # context of up to 256 previous characters
